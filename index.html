@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./calculator.css" />
+    <title>JS Calculator</title>
+</head>
+
+
+<body>
+     
+        <div class="calc"> <!--div หลักที่ครอบคลุมเครื่องคิดเลขทั้งหมด-->
+          
+            <section class="screen">0</section> 
+            <!-- ส่วนที่แสดงผลการคำนวณ-->
+      
+            <section class="calc-buttons"> 
+              <!-- ส่วนที่เก็บปุ่มของเครื่องคิดเลข-->
+
+             
+              <div class="calc-button-row"> 
+                <!--ส่วนที่ใช้จัดวางปุ่มของเครื่องคิดเลขที่อยู่ในแถวเดียวกัน-->
+                 <!--โดยแต่ละปุ่มจะถูกจัดวางในแถวนี้ตามลำดับ-->
+                <button class="calc-button double">C</button> 
+                <!--ปุ่มสำหรับล้างค่า โดยดับเบิ้ลเป็น 2 ช่อง -->
+                <button class="calc-button">←</button>
+                <button class="calc-button">÷</button> 
+              </div>
+
+              
+              <div class="calc-button-row">
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">×</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">-</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">+</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button triple">0</button>
+                <!--ปุ่ม = โดยแสดงtriple คือ 3 ช่อง -->
+                <button class="calc-button">=</button>
+              </div>
+
+            </section>
+          </div>
+         <script src="./calculator.js"></script>
+ 
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+* { /* ในการเร่ิมต้น css จะเริ่มแบบนี้ทุกครั้ง
+    กำหนดให้ทุก element ในเว็บไซต์มี box-sizing เป็น border-box 
+    เพื่อให้ความกว้างและความสูงของ element ไม่เพิ่มขึ้นเมื่อเพิ่ม padding หรือ border.*/ 
+    box-sizing: border-box;
+  }
+  
+  body { /*  กำหนดให้ไม่มีการเพิ่ม padding หรือ margin ใน body 
+    เพื่อให้เครื่องคิดเลขของเราเริ่มต้นที่จุดเริ่มต้นของหน้าเว็บ.ถ้ามีค่าเป็น 0*/
+    padding: 10 px;
+    margin: 20 px;
+  }
+  
+  .calc {/* กำหนดขนาดของเครื่องคิดเลข */
+    width: 400px;
+    background-color: rgb(164, 10, 10);
+    color: white;
+  }
+  
+  .screen {/*กำหนดรูปแบบการแสดงคำตอบ กำหนดสไตล์ของส่วนแสดงผลลัพธ์ เ
+    ช่น สีตัวอักษรขาว, ขนาดตัวอักษร 40px, และการจัดวางตามขวา.*/
+    color: rgb(14, 153, 218); /*  สีตัวเลข*/
+    font-size: 60px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+  }
+  
+  .calc-button {/*   เป็นการกำหนดรูปแบบของปุ่มทั้งหมด */
+    background-color: #d8dadb;
+    color: black;
+    height: 100px;
+    width: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .calc-button:hover { /* เป็นคำสั่งดักจับเหตูการณ์คือ ถ้าชื่อเม้าที่ปุ่ม จะเปลียนเป็นสีนี้*/
+    background-color: #f30606;
+  }
+  
+  .calc-button:active { /* active จะทำการเปลี่ยนสีปุ่ม เมื่อมีการคลิกที่ปุ่ม*/
+    background-color: #0656f6;
+  }
+  
+  .double { /*  double ที่อยู่ในคลาสย่อยของ calc-bottle กำหนดให้มมีความกว้างเท่านี้*/
+    width: 49.7%;
+  }
+   
+  .triple { /* triple ที่อยู่ในคลาสย่อยของ calc-bottle กำหนดให้มมีความกว้างเท่านี้*/
+    width: 74.8%;
+  }
+  
+  .calc-button:last-child { 
+    /*คำสั่งเข้าถึง element ลำดับสุดท้่ายซึ่งก็คือ ปุ่มสุดท้ายของท้ายแถว ให้แตกต่างจากปุ่มอื่น
+     โดยกำหนดให้มีสีพื้นดังนี้*/
+    background-color: #0a0602;
+    color: white;
+  }
+  
+  .calc-button:last-child:hover { 
+    /*คำสั่งเข้าถึง element ลำดับสุดท้่ายซึ่งก็คือ ในส่วนของปุ่มแถวสุดท้าย  
+    เมื่อมีการชี้ไปที่ปุ่มจะมีการเปลี่ยนสี*/
+    background-color: #ec0e0e;
+  }
+  
+  .calc-button:last-child:active {
+    /*คำสั่งเข้าถึง element ลำดับสุดท้่ายซึ่งก็คือใสส่วนของท้ายแถว 
+    เมื่อมีการคลิกที่ปุ่มจะมีการเปลี่ยนสี*/
+    background-color: #81bb24;
+  }
+  
+  .calc-button-row { /*การกำหนดรูปแบบของแถวแต่ละแถว*/
+    display: flex;    
+    /* กำหนดให้แถวของปุ่มมีลักษณะเป็น Flexbox */
+    align-content: stretch; /*โดยทำให้ปุ่มอยู่ในแนวนอน */
+    justify-content: space-between;  /*ปรับการกระจายตัวของปุ่มในแถวให้เต็มพื้นที่ */
+    margin-bottom: 1%; /*และมีระยะห่างด้านล่างเท่ากับ 1%*/
+  }
+  
+  .calc-button-row:last-child { 
+     /*กำหนดให้ไม่มีการเพิ่มพื้นที่ด้านล่างของแถวปุ่มสุดท้าย 
+     เพื่อป้องกันการมีพื้นที่เปล่าด้านล่างของเครื่องคิดเลขที่ไม่จำเป็น*/
+    padding-bottom: 0;
+  }
